@@ -1,0 +1,16 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+body { 
+  font-family: 'Noto Sans KR', sans-serif;
+ }
+*{
+  margin: 0;
+  padding: 0;
+}
+a{text-decoration: none;}
+.cf::after{content:''; display: block; clear: both;}
+.fl{float:left;}
+.fr{float:right;}
+li{list-style: none;}
+html{
+  overflow-x: hidden;
+}
