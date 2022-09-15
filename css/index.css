@@ -312,6 +312,34 @@ body {
 .con_ico7 {
   background: url(../img/n7.svg) no-repeat center;
 }
+.con_ico1:hover {
+  background: url(../img/n2.svg) no-repeat center #f0f2f9;
+  transition: all 0.2s;
+}
+.con_ico2:hover {
+  background: url(../img/n5.svg) no-repeat center #f0f2f9;
+  transition: all 0.2s;
+}
+.con_ico3:hover {
+  background: url(../img/n9.svg) no-repeat center #f0f2f9;
+  transition: all 0.2s;
+}
+.con_ico4:hover {
+  background: url(../img/n4.svg) no-repeat center #f0f2f9;
+  transition: all 0.2s;
+}
+.con_ico5:hover {
+  background: url(../img/n3.svg) no-repeat center #f0f2f9;
+  transition: all 0.2s;
+}
+.con_ico6:hover {
+  background: url(../img/n11.svg) no-repeat centers #f0f2f9;
+  transition: all 0.2s;
+}
+.con_ico7:hover {
+  background: url(../img/n7.svg) no-repeat center #f0f2f9;
+  transition: all 0.2s;
+}
 .con_menu {
   max-width: 1440px;
   height: 500px;
@@ -382,6 +410,11 @@ body {
   background: #fdfaf7;
   font-size: 1em;
 }
+.content2 .menu_1 .con_txt button:hover {
+  background: rgba(0, 84, 166, 0.8);
+  transition: all 0.2s cubic-bezier(0.18, 1.44, 1, 1) 0s;
+  color: #fff;
+}
 .content2 {
   float: left;
   background: #fdfaf7;
@@ -410,26 +443,18 @@ body {
   opacity: 0.03;
   z-index: -300;
 }
-.content3 {
-  margin: 250px auto;
-  max-width: 1440px;
-}
 .content3 .menu_2 .con_bg_img {
   background: url(../img/news_title.png) no-repeat;
   width: 300px;
   height: 200px;
-  position: absolute;
-  transform: translate(-180%, 0);
-  left: 41%;
 }
 .content3 .menu_2 {
   height: 500px;
 }
 .content3 .menu_2_ulw > ul {
-  position: absolute;
-  transform: translate(-22%, 3%);
   width: 1400px;
   height: 550px;
+  margin: 0 0 0 100px;
 }
 .content3 .menu_2_ulw > ul > li {
   width: 375px;
@@ -469,11 +494,6 @@ body {
   color: #0054a6;
   background: none;
   border: none;
-}
-.content3 .menu_2_ulw {
-  position: absolute;
-  left: 50%;
-  transform: translate(-5%, 20%);
 }
 .content3 .menu_2_ulw .tit {
   font-size: 20px;
@@ -722,4 +742,41 @@ body {
 }
 #chat.visible {
   opacity: 1;
+}
+
+/* 탭버튼 css 추가 */
+.tab_wrap {
+  height: 350px;
+  padding: 150px 0 125px;
+}
+.tab_menu {
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+}
+.tab_menu .list {
+  overflow: hidden;
+  margin: 0 0 0 90px;
+}
+.tab_menu .list li {
+  float: left;
+  margin-right: 14px;
+}
+.tab_menu .list li.is_on .btn {
+  font-weight: bold;
+  color: #0054a6;
+}
+.tab_menu .list .btn {
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 18px;
+  color: #222;
+  background: none;
+  border: none;
+}
+.tab_menu .cont_area .cont {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0;
 }
