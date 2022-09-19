@@ -453,11 +453,7 @@ body {
 
 .content2 .menu_1 .con_txt {
   float: left;
-  position: absolute;
-  top: 335px;
-  left: 50%;
   transform: translate(-121%);
-  z-index: 100;
 }
 
 .content2 .menu_1 .con_txt span {
@@ -918,7 +914,7 @@ body {
 /* 슬라이드 추가 */
 #slideShow{
   width: 3000px;
-  height: 300px;
+  height: 393px;
   position: relative;
   margin: 50px auto;
   overflow: hidden;   
