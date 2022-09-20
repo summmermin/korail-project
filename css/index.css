@@ -111,7 +111,7 @@ body {
   margin: 0 30px;
 }
 
-.nav li>a {
+.nav li > a {
   display: block;
   text-align: center;
   padding-top: 38px;
@@ -178,7 +178,7 @@ body {
   padding-left: 10px;
 }
 
-.gnb>p a {
+.gnb > p a {
   width: 30px;
   height: 38px;
   position: absolute;
@@ -186,7 +186,7 @@ body {
   top: 38px;
 }
 
-.gnb>p a:first-child {
+.gnb > p a:first-child {
   background: url(../img/icon-Q.svg);
   width: 23px;
   height: 23px;
@@ -325,6 +325,14 @@ body {
 .visual_bottom_area .container a {
   color: #fff;
 }
+.visual_bottom_area .container a::after {
+  background: url(../img/visual_arrow.svg) no-repeat center;
+  width: 30px;
+  height: 18px;
+  margin-left: -15px;
+  -webkit-animation: scroll 1s ease-in-out infinite both;
+  animation: scroll 1s ease-in-out infinite both;
+}
 
 .wrap .center_ct {
   background-size: cover;
@@ -420,14 +428,14 @@ body {
   font-weight: initial;
 }
 
-.container_content>a {
+.container_content > a {
   padding: 30px;
   margin: 0 10px;
   border: 1px solid #888;
   border-radius: 40px;
 }
 
-.container_content>span {
+.container_content > span {
   display: block;
   margin: 33px;
 }
@@ -530,24 +538,24 @@ body {
   height: 500px;
 }
 
-.content3 .menu_2_ulw>ul {
+.content3 .menu_2_ulw > ul {
   width: 1400px;
   height: 550px;
   margin: 0 0 0 100px;
 }
 
-.content3 .menu_2_ulw>ul>li {
+.content3 .menu_2_ulw > ul > li {
   width: 375px;
   height: 100px;
   margin: 30px 10px 45px 10px;
 }
 
-.content3 .menu_2_ulw>ul>li>span {
+.content3 .menu_2_ulw > ul > li > span {
   display: block;
   width: 115px;
 }
 
-.content3 .menu_2_ulw>ul>li>a {
+.content3 .menu_2_ulw > ul > li > a {
   display: block;
   width: 375px;
   overflow: hidden;
@@ -564,7 +572,7 @@ body {
   min-height: 57px;
 }
 
-.content3 .menu_2_ulw>ul>li>a:hover {
+.content3 .menu_2_ulw > ul > li > a:hover {
   text-decoration: underline;
 }
 
@@ -594,7 +602,7 @@ body {
   color: #ea4c49;
 }
 
-.content3 .menu_2_ulw>ul>li .date {
+.content3 .menu_2_ulw > ul > li .date {
   font-size: 17px;
   color: #aaa;
   margin-top: 40px;
@@ -689,22 +697,26 @@ body {
   margin: auto;
 }
 
-.content5 {
+.content5 #slideShowB {
   position: relative;
-  top: 0;
-  left: 0;
+  height: 140px;
 }
-
-.content5 .banner_s_wrap .banner_s {
+.content5 #slideShowB .slides_banner {
   position: absolute;
   left: 50%;
   transform: translate(-45%);
   width: 1400px;
+  height: 110px;
+  overflow: hidden;
 }
-
-.content5 .banner_s_wrap .banner_s img {
-  border-radius: 15px;
-  border: 1px solid #888;
+.content5 #slideShowB .slides_banner li {
+  float: left;
+  margin: 0 10px 0 0;
+}
+.content5 #slideShowB .controllerb {
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
 }
 
 #footer {
@@ -832,7 +844,7 @@ body {
   font-weight: 600;
 }
 
-.footer_info .container_fi>span {
+.footer_info .container_fi > span {
   color: rgb(151 152 163 / 69%);
   letter-spacing: 0;
   font-weight: 600;
@@ -912,56 +924,50 @@ body {
 }
 
 /* 슬라이드 추가 */
-#slideShow{
-  width: 3000px;
-  height: 393px;
-  position: relative;
-  margin: 50px auto;
-  overflow: hidden;   
-
+.slides {
+  display: flex;
+}
+.slide_container_B {
+  width: 1400px;
+  margin: 0 auto;
 }
 
-.slides{
+.slide_wrapper_B {
+  position: relative;
+  width: 1370px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 108px;
+}
+
+.slides_B {
   position: absolute;
   left: 0;
   top: 0;
-  width: 3000px; 
-  transition: left 0.5s ease-out; 
+  height: 108px;
+  width: 100%;
 }
 
-
-.slides li:first-child{
-  margin-left: 100px;
+.slides_B.animated {
+  transition: 0.5s ease-out;
 }
 
-.slides li:not(:last-child){
-  float: left;
-  margin-right: 100px;
+.slides_B li {
+  width: 200px;
+  height: 108px;
+  position: absolute;
 }
 
-.slides li{
-  float: left;
-}
-
-.controller span{
-  position:absolute;
-  background-color: transparent;
-  color: black;
+.controlsB {
   text-align: center;
-  border-radius: 50%;
-  padding: 10px 20px;
-  top: 50%;
-  font-size: 1.3em;
+  margin-top: 15px;
+}
+
+.prevB,
+.nextB {
+  color: #000;
+  font-weight: bold;
+  padding: 0px 2px;
+  margin: 0 10px;
   cursor: pointer;
-}
-
-.controller span:hover{
-  background-color: rgba(128, 128, 128, 0.11);
-}
-
-.prev{
-  left: 10px;
-}
-.next{
-  right: 10px;
 }
