@@ -111,7 +111,7 @@ body {
   margin: 0 30px;
 }
 
-.nav li > a {
+.nav li>a {
   display: block;
   text-align: center;
   padding-top: 38px;
@@ -178,7 +178,7 @@ body {
   padding-left: 10px;
 }
 
-.gnb > p a {
+.gnb>p a {
   width: 30px;
   height: 38px;
   position: absolute;
@@ -186,7 +186,7 @@ body {
   top: 38px;
 }
 
-.gnb > p a:first-child {
+.gnb>p a:first-child {
   background: url(../img/icon-Q.svg);
   width: 23px;
   height: 23px;
@@ -326,15 +326,6 @@ body {
   color: #fff;
 }
 
-.visual_bottom_area .container a::after {
-  background: url(../img/visual_arrow.svg) no-repeat center;
-  width: 30px;
-  height: 18px;
-  margin-left: -15px;
-  -webkit-animation: scroll 1s ease-in-out infinite both;
-  animation: scroll 1s ease-in-out infinite both;
-}
-
 .wrap .center_ct {
   background-size: cover;
   width: 100%;
@@ -429,14 +420,14 @@ body {
   font-weight: initial;
 }
 
-.container_content > a {
+.container_content>a {
   padding: 30px;
   margin: 0 10px;
   border: 1px solid #888;
   border-radius: 40px;
 }
 
-.container_content > span {
+.container_content>span {
   display: block;
   margin: 33px;
 }
@@ -462,7 +453,11 @@ body {
 
 .content2 .menu_1 .con_txt {
   float: left;
+  position: absolute;
+  top: 335px;
+  left: 50%;
   transform: translate(-121%);
+  z-index: 100;
 }
 
 .content2 .menu_1 .con_txt span {
@@ -539,23 +534,24 @@ body {
   height: 500px;
 }
 
-.content3 .menu_2_ulw > ul {
+.content3 .menu_2_ulw>ul {
   width: 1400px;
-  height: 200px;
+  height: 550px;
+  margin: 0 0 0 100px;
 }
 
-.content3 .menu_2_ulw > ul > li {
+.content3 .menu_2_ulw>ul>li {
   width: 375px;
   height: 100px;
   margin: 30px 10px 45px 10px;
 }
 
-.content3 .menu_2_ulw > ul > li > span {
+.content3 .menu_2_ulw>ul>li>span {
   display: block;
   width: 115px;
 }
 
-.content3 .menu_2_ulw > ul > li > a {
+.content3 .menu_2_ulw>ul>li>a {
   display: block;
   width: 375px;
   overflow: hidden;
@@ -572,7 +568,7 @@ body {
   min-height: 57px;
 }
 
-.content3 .menu_2_ulw > ul > li > a:hover {
+.content3 .menu_2_ulw>ul>li>a:hover {
   text-decoration: underline;
 }
 
@@ -602,10 +598,10 @@ body {
   color: #ea4c49;
 }
 
-.content3 .menu_2_ulw > ul > li .date {
+.content3 .menu_2_ulw>ul>li .date {
   font-size: 17px;
   color: #aaa;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .content4 {
@@ -613,7 +609,7 @@ body {
   top: 0;
   left: 0;
   max-width: 1440px;
-  margin: 445px auto 300px auto;
+  margin: 350px auto 300px auto;
 }
 
 .content4 .menu_3 .menu_3_left {
@@ -697,29 +693,22 @@ body {
   margin: auto;
 }
 
-.content5 #slideShowB {
+.content5 {
   position: relative;
-  height: 140px;
+  top: 0;
+  left: 0;
 }
 
-.content5 #slideShowB .slides_banner {
+.content5 .banner_s_wrap .banner_s {
   position: absolute;
   left: 50%;
   transform: translate(-45%);
   width: 1400px;
-  height: 110px;
-  overflow: hidden;
 }
 
-.content5 #slideShowB .slides_banner li {
-  float: left;
-  margin: 0 10px 0 0;
-}
-
-.content5 #slideShowB .controllerb {
-  position: absolute;
-  left: 50%;
-  bottom: -15px;
+.content5 .banner_s_wrap .banner_s img {
+  border-radius: 15px;
+  border: 1px solid #888;
 }
 
 #footer {
@@ -847,13 +836,13 @@ body {
   font-weight: 600;
 }
 
-.footer_info .container_fi > span {
+.footer_info .container_fi>span {
   color: rgb(151 152 163 / 69%);
   letter-spacing: 0;
   font-weight: 600;
   position: absolute;
   left: 50%;
-  top: 143px;
+  top: 73px;
   transform: translate(-69%, 0);
 }
 
@@ -895,12 +884,9 @@ body {
   margin: auto;
 }
 
-.tab_menu ul {
-  display: flex;
-}
-
 .tab_menu .list {
   overflow: hidden;
+  margin: 0 0 0 90px;
 }
 
 .tab_menu .list li {
@@ -911,16 +897,6 @@ body {
 .tab_menu .list li.is_on .btn {
   font-weight: bold;
   color: #0054a6;
-}
-.tab_menu .list li.is_on .tab_point {
-  display: block;
-  position: absolute;
-  top: -6px;
-  left: 4px;
-  border-radius: 50%;
-  width: 13px;
-  height: 13px;
-  background-color: #0054a6;
 }
 
 .tab_menu .list .btn {
@@ -940,143 +916,63 @@ body {
 }
 
 /* 슬라이드 추가 */
-.slides {
-  display: flex;
-}
-
-.slide_container_B {
-  width: 1400px;
-  margin: 0 auto;
-}
-
-.slide_wrapper_B {
+/* 보여줄 구간의 높이와 넓이 설정 */
+#slideShow{
+  width: 3000px;
+  height: 300px;
   position: relative;
-  width: 1370px;
-  margin: 0 auto;
-  overflow: hidden;
-  height: 108px;
+  margin: 50px auto;
+  overflow: hidden;   
+  /*리스트 형식으로 이미지를 일렬로 
+  정렬할 것이기 때문에, 3000px 밖으로 튀어 나간 이미지들은
+  hidden으로 숨겨줘야됨*/
 }
 
-.slides_B {
+.slides{
   position: absolute;
   left: 0;
   top: 0;
-  height: 108px;
-  width: 100%;
+  width: 3000px; /* 슬라이드할 사진과 마진 총 넓이 */
+  transition: left 0.5s ease-out; 
+  /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
 }
 
-.slides_B.animated {
-  transition: 0.5s ease-out;
+/* 첫 번째 슬라이드 가운데에 정렬하기위해
+첫번째 슬라이드만 margin-left조정 */
+.slides li:first-child{
+  margin-left: 100px;
 }
 
-.slides_B li {
-  width: 200px;
-  height: 108px;
-  position: absolute;
-}
-
-.controlsB {
-  text-align: center;
-  margin-top: 15px;
-}
-
-.prevB,
-.nextB {
-  color: #000;
-  font-weight: bold;
-  padding: 0px 2px;
-  margin: 0 10px;
-  cursor: pointer;
-}
-/* 주요사업부분 슬라이드 */
-.ko_slide_container {
-  width: 1400px;
-  margin: 0 auto;
-}
-
-.ko_slide_wrapper {
-  position: relative;
-  width: 1380px;
-  margin: 0 auto;
-  padding-top: 200px;
-}
-
-.ko_slides {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 400px;
-  width: 100%;
-}
-
-.ko_slides.animatedC {
-  transition: 0.5s ease-out;
-}
-
-.ko_slides li {
-  width: 300px;
-  height: 400px;
-  position: absolute;
-}
-.ko_slides li {
-  cursor: pointer;
-}
-
-@media (max-width: 700px) {
-  .ko-slide_container {
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-
-  .ko-slide_wrapper {
-    width: 100%;
-  }
-}
-/* 주요사업부분 슬라이드 끝 */
-/* 탭버튼 구현 */
-.tab_wrap {
-  height: 350px;
-}
-
-.tab_menu {
-  position: relative;
-  max-width: 1440px;
-  margin: auto;
-}
-
-.tab_menu .list {
-  overflow: hidden;
-  display: flex;
-}
-
-.tab_menu .list li {
+/* 슬라이드들 옆으로 정렬 */
+.slides li:not(:last-child){
   float: left;
-  margin-right: 14px;
+  margin-right: 100px;
 }
 
-.tab_menu .list .btn {
-  font-size: 22px;
-  font-weight: 600;
-  margin-left: 18px;
-  color: #222;
-  background: none;
-  border: none;
+.slides li{
+  float: left;
 }
 
-.tab_menu .cont_area .cont {
-  display: none;
-  position: absolute;
-  top: 25px;
-  left: 0;
+.controller span{
+  position:absolute;
+  background-color: transparent;
+  color: black;
+  text-align: center;
+  border-radius: 50%;
+  padding: 10px 20px;
+  top: 50%;
+  font-size: 1.3em;
+  cursor: pointer;
 }
-#tab2 .tab2-wrap ul {
-  margin: 65px 0px;
-  max-width: 588px;
-  display: flex;
+
+/* 이전, 다음 화살표에 마우스 커서가 올라가 있을때 */
+.controller span:hover{
+  background-color: rgba(128, 128, 128, 0.11);
 }
-#tab2 .tab2-wrap ul li {
-  width: 50%;
-  margin: 0 60px 0 0;
+
+.prev{
+  left: 10px;
 }
-/* 탭버튼 구현 끝 */
+.next{
+  right: 10px;
+}

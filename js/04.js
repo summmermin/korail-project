@@ -7,7 +7,7 @@ var slidesC = document.querySelector('.ko_slides'),
     slideMarginC = 30,
     moveAmtC = slideWidthC + slideMarginC,
     maxSlidesC = 6,
-    responsiveMarginC = 20,
+    responsiveMarginC = 30,
     newslideW,
     newslideWWidthC,
     newslideWWidthC = slideWidthC;
@@ -92,15 +92,15 @@ var slidesC = document.querySelector('.ko_slides'),
     window.addEventListener('resize',function(){
         var currentWidthC = document.querySelector('body').offsetWidth;
 
-        if(currentWidthC < 700){            
+        if(currentWidthC < 900){            
             var slidesWidth = slidesC.offsetWidth;
             newslideWWidthC = (slidesWidth - (responsiveMarginC * maxSlidesC -1))/3;
-            responsiveMarginC = 20; 
+            responsiveMarginC = 30; 
         }else{
             newslideWWidthC = slideWidthC;
             responsiveMarginC = slideMarginC;
         }
-        if(currentWidthC <= 500){
+        if(currentWidthC <= 600){
             newslideWWidthC = slidesC.offsetWidth;            
             responsiveMarginC = 0;
         } 
