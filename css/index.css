@@ -325,6 +325,7 @@ body {
 .visual_bottom_area .container a {
   color: #fff;
 }
+
 .visual_bottom_area .container a::after {
   background: url(../img/visual_arrow.svg) no-repeat center;
   width: 30px;
@@ -540,8 +541,7 @@ body {
 
 .content3 .menu_2_ulw > ul {
   width: 1400px;
-  height: 550px;
-  margin: 0 0 0 100px;
+  height: 200px;
 }
 
 .content3 .menu_2_ulw > ul > li {
@@ -605,7 +605,7 @@ body {
 .content3 .menu_2_ulw > ul > li .date {
   font-size: 17px;
   color: #aaa;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .content4 {
@@ -613,7 +613,7 @@ body {
   top: 0;
   left: 0;
   max-width: 1440px;
-  margin: 350px auto 300px auto;
+  margin: 445px auto 300px auto;
 }
 
 .content4 .menu_3 .menu_3_left {
@@ -701,6 +701,7 @@ body {
   position: relative;
   height: 140px;
 }
+
 .content5 #slideShowB .slides_banner {
   position: absolute;
   left: 50%;
@@ -709,10 +710,12 @@ body {
   height: 110px;
   overflow: hidden;
 }
+
 .content5 #slideShowB .slides_banner li {
   float: left;
   margin: 0 10px 0 0;
 }
+
 .content5 #slideShowB .controllerb {
   position: absolute;
   left: 50%;
@@ -850,7 +853,7 @@ body {
   font-weight: 600;
   position: absolute;
   left: 50%;
-  top: 73px;
+  top: 143px;
   transform: translate(-69%, 0);
 }
 
@@ -892,9 +895,12 @@ body {
   margin: auto;
 }
 
+.tab_menu ul {
+  display: flex;
+}
+
 .tab_menu .list {
   overflow: hidden;
-  margin: 0 0 0 90px;
 }
 
 .tab_menu .list li {
@@ -905,6 +911,16 @@ body {
 .tab_menu .list li.is_on .btn {
   font-weight: bold;
   color: #0054a6;
+}
+.tab_menu .list li.is_on .tab_point {
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: 4px;
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  background-color: #0054a6;
 }
 
 .tab_menu .list .btn {
@@ -927,6 +943,7 @@ body {
 .slides {
   display: flex;
 }
+
 .slide_container_B {
   width: 1400px;
   margin: 0 auto;
@@ -971,3 +988,49 @@ body {
   margin: 0 10px;
   cursor: pointer;
 }
+/* 주요사업부분 슬라이드 */
+.ko_slide_container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.ko_slide_wrapper {
+  position: relative;
+  width: 1380px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+.ko_slides {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 400px;
+  width: 100%;
+}
+
+.ko_slides.animatedC {
+  transition: 0.5s ease-out;
+}
+
+.ko_slides li {
+  width: 300px;
+  height: 400px;
+  position: absolute;
+}
+.ko_slides li {
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .ko-slide_container {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .ko-slide_wrapper {
+    width: 100%;
+  }
+}
+/* 주요사업부분 슬라이드 끝 */

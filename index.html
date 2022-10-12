@@ -443,23 +443,17 @@
               </div>
             </div>
             <!--슬라이드 추가 -->
-            <div id="slideShow">
-              <ul class="slides">
-                <li>
-                  <img src="img/business_img01.jpg" alt="" height="472" />
-                </li>
-                <li><img src="img/business_img02_2.jpg" alt="" height="472" /></li>
-                <li><img src="img/business_img03.jpg" alt="" height="472" /></li>
-                <li><img src="img/business_img04.jpg" alt="" height="472" /></li>
-                <li><img src="img/business_img05.jpg" alt="" height="472" /></li>
-                <li><img src="img/business_img06.jpg" alt="" height="472" /></li>
-              </ul>
-              <p class="controller">
-                <!-- &lang: 왼쪽 방향 화살표
-                &rang: 오른쪽 방향 화살표 -->
-                <span class="prev">&lang;</span>
-                <span class="next">&rang;</span>
-              </p>
+            <div class="ko_slide_container">
+              <div class="ko_slide_wrapper">
+                <ul class="ko_slides">
+                  <li><img src="img/business_img01.jpg" alt="" height="400" /></li>
+                  <li><img src="img/business_img02_2.jpg" alt="" height="400" /></li>
+                  <li><img src="img/business_img03.jpg" alt="" height="400" /></li>
+                  <li><img src="img/business_img04.jpg" alt="" height="400" /></li>
+                  <li><img src="img/business_img05.jpg" alt="" height="400" /></li>
+                  <li><img src="img/business_img06.jpg" alt="" height="400" /></li>
+                </ul>
+              </div>
             </div>
             <!-- 슬라이드 끝 -->
           </div>
@@ -467,14 +461,20 @@
         <!-- // #contents2 -->
         <div class="cf"></div>
         <div class="tab_wrap">
+          <div class="c3-img">
+            <img src="img/news_title.png" alt="" />
+          </div>
           <div class="tab_menu">
             <ul class="list">
               <li class="is_on">
+                <div class="tab_point"></div>
                 <a href="#tab1" class="btn">전체</a>
               </li>
+              <li>/</li>
               <li>
                 <a href="#tab2" class="btn">공지사항</a>
               </li>
+              <li>/</li>
               <li>
                 <a href="#tab3" class="btn">보도자료</a>
               </li>
@@ -500,6 +500,8 @@
                           <a href="#">한국철도, ‘코레일 상생클럽’ 참여 중소협력사 모집</a>
                           <span class="date">2022-08-01</span>
                         </li>
+                      </ul>
+                      <ul>
                         <li class="fl">
                           <span class="tit notice">공지사항</span>
                           <a href="#">공동연구기관 모집 공고(~8.10. 16:00)</a>
@@ -615,14 +617,26 @@
           <div class="slide_container_B">
             <div class="slide_wrapper_B">
               <ul class="slides_B">
-                <li><a href="#"><img src="img/banner_01.png" alt="국민인재추천해주세요바로가기" width="333" height="108" id="gallery1" /></a></li>
-              <li><a href="#"><img src="img/banner_02.png" alt="기업규제개혁바로가기" width="333" height="108" id="gallery2" /></a></li>
-              <li><a href="#"><img src="img/banner_03.png" alt="국민참여예산제도바로가기" width="333" height="108" id="gallery3" /></a></li>
-              <li><a href="#"><img src="img/banner_04.png" alt="중소벤처기업부신고해주세요바로가기" width="333" height="108" id="gallery4" /></a></li>
-              <li><a href="#"><img src="img/banner_05.png" alt="중소벤처기업부신고해주세요바로가기" width="333" height="108" id="gallery4" /></a></li>
-              <li><a href="#"><img src="img/banner_06.png" alt="중소벤처기업부신고해주세요바로가기" width="333" height="108" id="gallery4" /></a></li>
+                <li>
+                  <a href="#"><img src="img/banner_01.png" alt="국민인재추천해주세요바로가기" width="333" height="108" id="gallery1" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/banner_02.png" alt="기업규제개혁바로가기" width="333" height="108" id="gallery2" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/banner_03.png" alt="국민참여예산제도바로가기" width="333" height="108" id="gallery3" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/banner_04.png" alt="중소벤처기업부신고해주세요바로가기" width="333" height="108" id="gallery4" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/banner_05.png" alt="중소벤처기업부신고해주세요바로가기" width="333" height="108" id="gallery4" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/banner_06.png" alt="중소벤처기업부신고해주세요바로가기" width="333" height="108" id="gallery4" /></a>
+                </li>
               </ul>
-            </div>	
+            </div>
             <p class="controlsB">
               <span class="prevB">&lang;</span>
               <span class="nextB">&rang;</span>
@@ -682,5 +696,6 @@
     <script src="js/01.js"></script>
     <script src="js/02.js"></script>
     <script src="js/03.js"></script>
+    <script src="js/04.js"></script>
   </body>
 </html>
