@@ -251,7 +251,16 @@ body {
   overflow: hidden;
   height: 925px;
 }
-
+#brandVisual:before{
+  position:absolute;
+  background:url(../img/slogan-group.png) no-repeat;
+  content:'';
+  max-width:720px; height:500px;
+  z-index:999999999999;
+  right:10%;
+  top:20%;
+  width:100%;
+}
 #brandVisual .visual_slide li a {
   display: block;
   text-indent: -99999999px;
