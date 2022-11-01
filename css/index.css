@@ -1,13 +1,24 @@
-
 @keyframes scroll {
-  0% {transform:translateY(-10px); opacity:0;}
-  50% {transform:translateY(0); opacity:1;}
-  100% {transform:translateY(-10px); opacity:0;}
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
 }
 
 * {
   -webkit-font-smoothing: antialised;
 }
+
 body {
   font-size: 16px;
   line-height: 24px;
@@ -117,7 +128,7 @@ body {
   margin: 0 30px;
 }
 
-.nav li > a {
+.nav li>a {
   display: block;
   text-align: center;
   padding-top: 38px;
@@ -184,7 +195,7 @@ body {
   padding-left: 10px;
 }
 
-.gnb > p a {
+.gnb>p a {
   width: 30px;
   height: 38px;
   position: absolute;
@@ -192,7 +203,7 @@ body {
   top: 38px;
 }
 
-.gnb > p a:first-child {
+.gnb>p a:first-child {
   background: url(../img/icon-Q.svg);
   width: 23px;
   height: 23px;
@@ -251,16 +262,7 @@ body {
   overflow: hidden;
   height: 925px;
 }
-#brandVisual:before{
-  position:absolute;
-  background:url(../img/slogan-group.png) no-repeat;
-  content:'';
-  max-width:720px; height:500px;
-  z-index:999999999999;
-  right:10%;
-  top:20%;
-  width:100%;
-}
+
 #brandVisual .visual_slide li a {
   display: block;
   text-indent: -99999999px;
@@ -301,25 +303,17 @@ body {
 }
 
 /* 슬라이더 끝 */
-.container_left .con_bt a {
-  border-radius: 40px;
-  width: 30px;
-  height: 30px;
-  background: #fff;
-  display: block;
-}
-
-.visual_top_area .container_right {
-  background: url(../img/slogan-group.png) no-repeat center;
-  height: 300px;
-  left: 50%;
-  position: relative;
-  transform: translate(-37%, 0);
-}
-
 .banner {
   position: relative;
   top: -2px;
+}
+
+.banner .banner_img {
+  top: 35%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 99999;
+  left: 20%;
 }
 
 .visual_bottom_area {
@@ -454,14 +448,14 @@ body {
   font-weight: initial;
 }
 
-.container_content > a {
+.container_content>a {
   padding: 30px;
   margin: 0 10px;
   border: 1px solid #888;
   border-radius: 40px;
 }
 
-.container_content > span {
+.container_content>span {
   display: block;
   margin: 33px;
 }
@@ -564,23 +558,23 @@ body {
   height: 500px;
 }
 
-.content3 .menu_2_ulw > ul {
+.content3 .menu_2_ulw>ul {
   width: 1400px;
   height: 200px;
 }
 
-.content3 .menu_2_ulw > ul > li {
+.content3 .menu_2_ulw>ul>li {
   width: 375px;
   height: 100px;
   margin: 30px 10px 45px 10px;
 }
 
-.content3 .menu_2_ulw > ul > li > span {
+.content3 .menu_2_ulw>ul>li>span {
   display: block;
   width: 115px;
 }
 
-.content3 .menu_2_ulw > ul > li > a {
+.content3 .menu_2_ulw>ul>li>a {
   display: block;
   width: 375px;
   overflow: hidden;
@@ -597,7 +591,7 @@ body {
   min-height: 57px;
 }
 
-.content3 .menu_2_ulw > ul > li > a:hover {
+.content3 .menu_2_ulw>ul>li>a:hover {
   text-decoration: underline;
 }
 
@@ -627,7 +621,7 @@ body {
   color: #ea4c49;
 }
 
-.content3 .menu_2_ulw > ul > li .date {
+.content3 .menu_2_ulw>ul>li .date {
   font-size: 17px;
   color: #aaa;
   margin-top: 20px;
@@ -638,7 +632,7 @@ body {
   top: 0;
   left: 0;
   max-width: 1440px;
-  margin: 445px auto 300px auto;
+  margin: 300px auto 300px auto;
 }
 
 .content4 .menu_3 .menu_3_left {
@@ -753,7 +747,7 @@ body {
   height: 265px;
   position: absolute;
   top: 4200px;
-  margin: 35px 0;
+  margin: 200px 0;
 }
 
 #footer .footer_nav {
@@ -872,7 +866,7 @@ body {
   font-weight: 600;
 }
 
-.footer_info .container_fi > span {
+.footer_info .container_fi>span {
   color: rgb(151 152 163 / 69%);
   letter-spacing: 0;
   font-weight: 600;
@@ -909,15 +903,19 @@ body {
 }
 
 /* 탭버튼 css 추가 */
+.c3-img {
+  margin: 100px 0 -100px 0;
+}
+
 .tab_wrap {
   height: 350px;
   padding: 150px 0 125px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .tab_menu {
   position: relative;
-  max-width: 1440px;
-  margin: auto;
 }
 
 .tab_menu ul {
@@ -937,6 +935,7 @@ body {
   font-weight: bold;
   color: #0054a6;
 }
+
 .tab_menu .list li.is_on .tab_point {
   display: block;
   position: absolute;
@@ -1013,6 +1012,7 @@ body {
   margin: 0 10px;
   cursor: pointer;
 }
+
 /* 주요사업부분 슬라이드 */
 .ko_slide_container {
   width: 1400px;
@@ -1043,6 +1043,7 @@ body {
   height: 400px;
   position: absolute;
 }
+
 .ko_slides li {
   cursor: pointer;
 }
@@ -1058,6 +1059,7 @@ body {
     width: 100%;
   }
 }
+
 /* 주요사업부분 슬라이드 끝 */
 /* 탭버튼 구현 */
 .tab_wrap {
@@ -1095,13 +1097,16 @@ body {
   top: 25px;
   left: 0;
 }
+
 #tab2 .tab2-wrap ul {
   margin: 65px 0px;
   max-width: 588px;
   display: flex;
 }
+
 #tab2 .tab2-wrap ul li {
   width: 50%;
   margin: 0 60px 0 0;
 }
+
 /* 탭버튼 구현 끝 */
