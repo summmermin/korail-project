@@ -747,7 +747,7 @@ body {
   height: 265px;
   position: absolute;
   top: 4200px;
-  margin: 200px 0;
+  margin: 60px 0;
 }
 
 #footer .footer_nav {
@@ -905,6 +905,10 @@ body {
 /* 탭버튼 css 추가 */
 .c3-img {
   margin: 100px 0 -100px 0;
+}
+
+.c3-img img {
+  margin: 0 0 0 60px;
 }
 
 .tab_wrap {
